@@ -44,3 +44,61 @@ Campo2 DECIMAL(20), /* (M,D) -> M dígitos, D de los M son decimales */
 );
 ```
 
+## Modificadores
+```sql
+PRIMARY KEY ; UNIQUE ; NULL ; NOT NULL
+```
+Delante de estos modificadores podemos agregar:
+```sql
+UNSIGNED ; ZEROFILL ; AUTO_INCREMENT
+```
+
+## Tipos de datos
+```sql
+BIT ; INT ; INTEGER ; BIGINT ; DOUBLE ; FLOAT ; DATE ; TIME ; DATETIME ; YEAR ; CHAR ; VARCHAR ; BINARY
+```
+
+## Modificar tablas
+### Añadir una nueva columna
+```sql
+ALTER TABLE ejemplo1 ADD edad INT(7) NOT NULL;
+```
+
+### Eliminar una columna
+```sql
+ALTER TABLE ejemplo1 DROP edad;
+```
+
+### Modificar una columna
+```sql
+ALTER TABLE ejemplo2 MODIFY Campo2 VARCHAR(100) UNIQUE;
+```
+
+### Cambiar el nombre de la columna a otro
+```sql
+ALTER TABLE ejemplo2 CHANGE Campo2 Campo2N INT(40) NOT NULL;
+```
+
+### Cambiar el nombre de la tabla
+```sql
+ALTER TABLE ejemplo1 RENAME TO ejemplo1N;
+```
+
+## Eliminar tabla
+```sql
+DROP TABLE IF EXIST ejemplo2;
+```
+
+## Insertar datos
+Uso un ejemplo diferente para que se entienda mejor.
+```sql
+INSERT INTO departamentos(idDepar, nomDepar, idDeparResp, idSede, presup, idGerente)
+VALUES ('DIR', 'Dirección', NULL, '1', '245000.87', '1');
+```
+
+## Seleccioanr información
+
+
+
+
+
