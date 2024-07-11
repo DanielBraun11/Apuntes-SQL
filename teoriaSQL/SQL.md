@@ -29,3 +29,18 @@ CREATE USER 'usuario'@'localhost' IDENTIFIED BY 'password';
 ```sql
 GRANT ALL PRIVILEGES ON nombre_base.* TO 'usuario'@'localhost';
 ```
+### Crear tablas
+```sql
+CREATE TABLE ejemplo1(
+Campo1 INT(7) PRIMARY KEY, /*Atributo Tipo(Longitud máxima) MODIFICADORES */
+Campo2 VARCHAR(10) UNIQUE NOT NULL /*El último no lleva,(coma) al final!! */
+...
+);
+
+CREATE TABLE ejemplo2(
+Campo1 INT(7) PRIMARY KEY,
+Campo2 DECIMAL(20), /* (M,D) -> M dígitos, D de los M son decimales */
+...                 /* Lo de debajo crea una clave foránea para referenciar la otra tabla */
+);
+```
+
