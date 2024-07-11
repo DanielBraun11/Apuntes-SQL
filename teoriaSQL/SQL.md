@@ -59,7 +59,7 @@ BIT ; INT ; INTEGER ; BIGINT ; DOUBLE ; FLOAT ; DATE ; TIME ; DATETIME ; YEAR ; 
 ```
 
 ## Modificar tablas
-### Añadir una nueva columna
+### - Añadir una nueva columna
 ```sql
 ALTER TABLE ejemplo1 ADD edad INT(7) NOT NULL;
 ```
