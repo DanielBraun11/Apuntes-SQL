@@ -97,7 +97,63 @@ VALUES ('DIR', 'Dirección', NULL, '1', '245000.87', '1');
 ```
 
 ## Seleccioanr información
+### - Selecciona todas las columnas de la tabla (*)
+```sql
+SELECT * FROM ejemplo1;
+```
+### - Selecciona las columnas que le digamos
+```sql
+SELECT Campo1, Campo2, ... FROM ejemplo1;
+```
+### - Selecciona valores unicos sin repetición (DISTINCT) elimina duplicados
+```sql
+SELECT DISTINCT Campo1, Campo2, ... FROM ejemplo1;
+```
 
+## Operaciones con atributos
+```sql
+COUNT /* Cuenta nº filas criterio */
+AVG /* Promedio */
+SUM /* Sumar */
+MAX /* Máximo */
+MIN /* Mínimo */
+```
+
+## Partículas de construcción
+### - Comparar
+```sql
+= /* Igual */
+<> /* Distinto */
+!= /* Distinto */
+> /* Mayor */
+>= /* Mayor o igual */
+< /* Menor */
+<= /* Menor o igual */
+```
+
+### - Lógicos
+```sql
+AND /* ... Y ... */
+OR /* ... O ... -> Se cumple uno y aparece */
+NOT /* NO ... */
+```
+
+### - Valores
+```sql
+BETWEEN ... AND ... /* Entre ... y ...  */
+Columna IN (valor1, valor2, ...) /* Los que tengan esos valores en esa columna */
+```
+
+```sql
+IS NULL ; IS NOT NULL ;
+LIKE 'A%' /* Busca un patron que empiece por 'A' */
+NOT LIKE '%A' /* Busca un patron que NO acabe por 'A' */
+%A% /* Contiene el caracter 'A' */
+
+EXISTS ; ANY ; SET ...
+```
+
+## WHERE
 
 
 
