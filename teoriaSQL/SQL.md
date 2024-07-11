@@ -228,8 +228,9 @@ WHERE idDepar IN (SELECT idDepar FROM departamentos
                   WHERE idSede IN (SELECT idSede
                                    FROM sedes
                                    WHERE ciudadSede='Sevilla'));
-/*IN indica que el valor del atributo que la precede se encuentre entre los devueltos (una lista) por la consulta que la sigue (Cada color ≠ es un anidado) */
-/* Además de IN/NOT IN, se pueden utilizar otros operadores como ANY o ALL*/
+/*IN indica que el valor del atributo que la precede se encuentre entre los devueltos (una lista)
+ por la consulta que la sigue (Cada color ≠ es un anidado) */
+/*Además de IN/NOT IN, se pueden utilizar otros operadores como ANY o ALL*/
 ```
 
 
