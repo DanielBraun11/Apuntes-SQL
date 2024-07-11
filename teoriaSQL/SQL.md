@@ -154,7 +154,50 @@ EXISTS ; ANY ; SET ...
 ```
 
 ## WHERE
+El uso de WHERE permite aplicar una condición para **filtrar** los resultados.
+```sql
+SELECT Campo1, Campo2, ...
+FROM ejemplo1
+WHERE Campo1 > 10;
+```
 
+## ORDER BY
+El uso de ORDER BY  permite aplicar una condición para **ordenar** los resultados.
+```sql
+SELECT Campo1, Campo2, ...
+FROM ejemplo1
+ORDER BY Campo2 DESC, ...; /* También existe ASC */
+```
 
+## INNER JOIN
+JOIN se utiliza para combinar filas de 2 o mas tablas, basada en una columna relacionada entre ellas.
+```sql
+SELECT column_name(s)
+FROM table1
+INNER JOIN table2
+ON table1.columna_name = columna_name;
+```
+EJEMPLO:
+```sql
+SELECT Orders.OrderID, Customers.CustomerName
+FROM Orders
+INNER JOIN Customers
+ON Orders.CustomerID = Customers.CustomerID;
+/* Esto seleccionará la "OrderID" de la tabla "Orders" y "CustomerName" de la tabla "Customers", donde "CustomerID" es común entre ambas tablas */
+```
+
+## GROUP BY
+GROUP BY se utiliza con funciones de agregado (COUNT, AVG, SUM, etc.) para agrupar el resultado por una o más columnas.
+```sql
+SELECT column1, COUNT(column2)
+FROM table_name
+GROUP BY column1;
+```
+EJEMPLO:
+```sql
+SELECT Country, COUNT(CustomerID)
+FROM Customers
+GROUP BY Country;
+/* Esto seleccionará la columna "Country" y el número de "CustomersID" para cada "Country" de la tabla "Customers" */
 
 
