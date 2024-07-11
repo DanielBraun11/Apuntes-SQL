@@ -13,23 +13,23 @@ Para usar una base en especifico (crear/modificar tablas, etc.)
 ```sql
 USE nombre_base;
 ```
-### Crear base de datos
+### - Crear base de datos
 ```sql
 CREATE DATABASE IF NOT EXIST nombre_base DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
 ```
-### Ver bases de datos
+### - Ver bases de datos
 ```sql
 SHOW DATABASE;
 ```
-### Crear usuarios
+### - Crear usuarios
 ```sql
 CREATE USER 'usuario'@'localhost' IDENTIFIED BY 'password';
 ```
-### Dar privilegios a usuarios
+### - Dar privilegios a usuarios
 ```sql
 GRANT ALL PRIVILEGES ON nombre_base.* TO 'usuario'@'localhost';
 ```
-### Crear tablas
+### - Crear tablas
 ```sql
 CREATE TABLE ejemplo1(
 Campo1 INT(7) PRIMARY KEY, /*Atributo Tipo(Longitud máxima) MODIFICADORES */
@@ -64,22 +64,22 @@ BIT ; INT ; INTEGER ; BIGINT ; DOUBLE ; FLOAT ; DATE ; TIME ; DATETIME ; YEAR ; 
 ALTER TABLE ejemplo1 ADD edad INT(7) NOT NULL;
 ```
 
-### Eliminar una columna
+### - Eliminar una columna
 ```sql
 ALTER TABLE ejemplo1 DROP edad;
 ```
 
-### Modificar una columna
+### - Modificar una columna
 ```sql
 ALTER TABLE ejemplo2 MODIFY Campo2 VARCHAR(100) UNIQUE;
 ```
 
-### Cambiar el nombre de la columna a otro
+### - Cambiar el nombre de la columna a otro
 ```sql
 ALTER TABLE ejemplo2 CHANGE Campo2 Campo2N INT(40) NOT NULL;
 ```
 
-### Cambiar el nombre de la tabla
+### - Cambiar el nombre de la tabla
 ```sql
 ALTER TABLE ejemplo1 RENAME TO ejemplo1N;
 ```
