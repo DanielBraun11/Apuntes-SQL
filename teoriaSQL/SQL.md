@@ -183,7 +183,8 @@ SELECT Orders.OrderID, Customers.CustomerName
 FROM Orders
 INNER JOIN Customers
 ON Orders.CustomerID = Customers.CustomerID;
-/* Esto seleccionará la "OrderID" de la tabla "Orders" y "CustomerName" de la tabla "Customers", donde "CustomerID" es común entre ambas tablas */
+/* Esto seleccionará la "OrderID" de la tabla "Orders" y "CustomerName" de la tabla "Customers",
+ donde "CustomerID" es común entre ambas tablas */
 ```
 
 ## GROUP BY
