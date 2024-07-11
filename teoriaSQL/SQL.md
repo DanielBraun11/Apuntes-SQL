@@ -200,5 +200,36 @@ SELECT Country, COUNT(CustomerID)
 FROM Customers
 GROUP BY Country;
 /* Esto seleccionará la columna "Country" y el número de "CustomersID" para cada "Country" de la tabla "Customers" */
+```
+
+## HAVING
+HAVING se utiliza para filtrar los resultados de una consulta que incluye una función de agregado.
+```sql
+SELECT column1, COUNT(column2)
+ FROM table_name
+ GROUP BY column1
+ HAVING COUNT(column2) > value;
+```
+EJEMPLO:
+```sql
+SELECT Country, COUNT(CustomerID)
+ FROM Customers
+ GROUP BY Country
+ HAVING COUNT(CustomerID) > 5;
+/*Esto seleccionará la columna "Country" y el número de "CustomerID" para cada "Country" de la tabla "Customers",
+ pero solo los países que tienen más de 5 clientes*/
+```
+## Consultas anidadas
+Utilizar el reusltado de una consulta como parte del predicado o criterio de selección de otra.
+```sql
+SELECT apellido1, apellido2, nombre
+FROM empleados
+WHERE idDepar IN (SELECT idDepar FROM departamentos
+                  WHERE idSede IN (SELECT idSede
+                                   FROM sedes
+                                   WHERE ciudadSede='Sevilla'));
+/*IN indica que el valor del atributo que la precede se encuentre entre los devueltos (una lista) por la consulta que la sigue (Cada color ≠ es un anidado) */
+/* Además de IN/NOT IN, se pueden utilizar otros operadores como ANY o ALL*/
+```
 
 
