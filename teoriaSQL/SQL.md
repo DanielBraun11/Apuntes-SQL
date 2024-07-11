@@ -11,11 +11,11 @@
 ## SENTENCIAS
 Para usar una base en especifico (crear/modificar tablas, etc.)
 ```sql
-**USE** nombre_base;
+USE nombre_base;
 ```
 ### Crear base de datos
 ```sql
-**CREATE DATABASE IF NOT EXIST ** nombre_base **DEFAULT CHARACTER SET** utf8 **COLLATE** utf8_general_ci;
+CREATE DATABASE IF NOT EXIST nombre_base DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
 ```
 ### Ver bases de datos
 ```sql
@@ -23,9 +23,9 @@ SHOW DATABASE;
 ```
 ### Crear usuarios
 ```sql
-**CREATE USER** 'usuario'@'localhost' **IDENTIFIED BY** 'password';
+CREATE USER 'usuario'@'localhost' IDENTIFIED BY 'password';
 ```
 ### Dar privilegios a usuarios
 ```sql
-**GRANT ALL PRIVILEGES ON** nombre_base.* **TO** 'usuario'@'localhost';
+GRANT ALL PRIVILEGES ON nombre_base.* TO 'usuario'@'localhost';
 ```
