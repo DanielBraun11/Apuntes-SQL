@@ -63,26 +63,45 @@ BIT ; INT ; INTEGER ; BIGINT ; DOUBLE ; FLOAT ; DATE ; TIME ; DATETIME ; YEAR ; 
 ```sql
 ALTER TABLE ejemplo1 ADD edad INT(7) NOT NULL;
 ```
+- **ALTER TABLE ejemplo1**: Modifica la tabla llamada 'ejemplo1'.
+- **ADD edad**: Añade una nueva columna llamada 'edad'.
+- **INT(7)**: Define el tipo de datos de la columna como entero con una longitud máxima de 7 dígitos.
+(Nota: en muchos sistemas de bases de datos, la longitud entre paréntesis para tipos de datos numéricos como INT no afecta la cantidad de dígitos almacenados,
+solo es una indicación para propósitos de visualización).
+- **NOT NULL**: Establece que esta columna no puede contener valores nulos.
 
 ### - Eliminar una columna
 ```sql
 ALTER TABLE ejemplo1 DROP edad;
 ```
+- ALTER TABLE ejemplo1: Modifica la tabla llamada ejemplo1.
+- DROP edad: Elimina la columna edad de la tabla.
+
 
 ### - Modificar una columna
 ```sql
 ALTER TABLE ejemplo2 MODIFY Campo2 VARCHAR(100) UNIQUE;
 ```
+- ALTER TABLE ejemplo2: Modifica la tabla llamada ejemplo2.
+- MODIFY Campo2: Modifica la columna Campo2.
+- VARCHAR(100): Cambia el tipo de datos de la columna a VARCHAR con una longitud máxima de 100 caracteres.
+- UNIQUE: Añade una restricción de unicidad a la columna, asegurando que todos los valores en esta columna sean únicos.
 
 ### - Cambiar el nombre de la columna a otro
 ```sql
 ALTER TABLE ejemplo2 CHANGE Campo2 Campo2N INT(40) NOT NULL;
 ```
+- ALTER TABLE ejemplo2: Modifica la tabla llamada ejemplo2.
+- CHANGE Campo2 Campo2N: Cambia el nombre de la columna Campo2 a Campo2N.
+- INT(40): Cambia el tipo de datos de la columna a INT con una longitud indicada de 40 (la longitud aquí es generalmente ignorada por los sistemas de bases de datos para el tipo INT).
+- NOT NULL: Establece que la nueva columna Campo2N no puede contener valores nulos.
 
 ### - Cambiar el nombre de la tabla
 ```sql
 ALTER TABLE ejemplo1 RENAME TO ejemplo1N;
 ```
+- ALTER TABLE ejemplo1: Modifica la tabla llamada ejemplo1.
+- RENAME TO ejemplo1N: Cambia el nombre de la tabla de ejemplo1 a ejemplo1N.
 
 ## Eliminar tabla
 ```sql
