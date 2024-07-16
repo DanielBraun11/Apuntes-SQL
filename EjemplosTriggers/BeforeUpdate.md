@@ -28,7 +28,7 @@ Verificamos la inserción de datos:
 SELECT * FROM sales;
 ```
 
-foto 1
+![MensajeEntradaInt](https://github.com/DanielBraun11/ApuntesSQL/blob/main/fotosSQL/BeforeUpdate1.png) 
 
 Se crea un trigger que se activa automáticamente antes de que se produzca un evento de UPDATE para cada fila de la tabla de sales. Si actualiza el valor en la columna
 de quantity a un nuevo valor que es 3 veces mayor que el valor actual, el activador genera un error y detiene la actualización.
@@ -67,7 +67,7 @@ SELECT *
 FROM sales;
 ```
 
-foto 2
+![MensajeEntradaInt](https://github.com/DanielBraun11/ApuntesSQL/blob/main/fotosSQL/BeforeUpdate2.png) 
 
 Ahora intentamos actualizar la cantidad de la fila con id 1 a 500 (más de 3 veces la cantidad actual):
 ```sql
@@ -79,7 +79,7 @@ Salta el siguiente error:
 **Error Code: 1644. The new quantity 500 cannot be 3 times greater than the current quantity 150**
 
 
-foto 3
+![MensajeEntradaInt](https://github.com/DanielBraun11/ApuntesSQL/blob/main/fotosSQL/BeforeUpdate3.png) 
 
 
 
