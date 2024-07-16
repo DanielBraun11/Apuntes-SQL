@@ -39,11 +39,11 @@ intentado introducir con edad negativa, la edad es 0:
 SELECT * FROM people;
 ```
 
-foto 1
+![MensajeEntradaInt](https://github.com/DanielBraun11/ApuntesSQL/blob/main/fotosSQL/BeforeInsert1.png) 
 
 Adicionalmente podemos verificar el trigger en MySQL Workbench:
 
-foto 2
+![MensajeEntradaInt](https://github.com/DanielBraun11/ApuntesSQL/blob/main/fotosSQL/BeforeInsert2.png) 
 
 Para mostrar TODOS los triggers de la vbase de datos demoTriggers y tabla people:
 ```sql
@@ -52,5 +52,5 @@ FROM demoTrigger
 LIKE 'people';
 ```
 
-foto 3
+![MensajeEntradaInt](https://github.com/DanielBraun11/ApuntesSQL/blob/main/fotosSQL/BeforeInsert3.png) 
 
