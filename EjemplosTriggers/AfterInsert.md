@@ -48,7 +48,6 @@ y optenemos usando:
 SELECT * FROM members;
 ```
 
-foto 1
 ![MensajeEntradaInt](https://github.com/DanielBraun11/ApuntesSQL/blob/main/fotosSQL/AfterInsert1.png) 
 
 
@@ -57,7 +56,7 @@ foto 1
 SELECT * FROM reminders;
 ```
 
-foto 2
+![MensajeEntradaInt](https://github.com/DanielBraun11/ApuntesSQL/blob/main/fotosSQL/AfterInsert2.png) 
 
 Insertamos dos filas en la tabla de **members**. Sin embargo, solo la primera fila tiene un valor de fecha de nacimiento NULL, por lo tanto,
 el disparador insertó solo una fila en la tabla de **reminders**.
