@@ -28,7 +28,7 @@ Mostrar tabla con los datos insertados:
 SELECT * FROM Sales;
 ```
 
-foto 1
+![MensajeEntradaInt](https://github.com/DanielBraun11/ApuntesSQL/blob/main/fotosSQL/AfterUpdate1.png) 
 
 Crear una tabla que almacene los cambios en la columna **quantity** de la tabla **Sales**
 ```sql
@@ -68,7 +68,7 @@ SET quantity = 350
 WHERE id = 1;
 ```
 
-foto 2
+![MensajeEntradaInt](https://github.com/DanielBraun11/ApuntesSQL/blob/main/fotosSQL/AfterUpdate2.png) 
 
 
 
