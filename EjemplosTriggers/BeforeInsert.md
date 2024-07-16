@@ -1,3 +1,4 @@
+# Ejemplo TRIGGER BEFORE INSERT
 Primero, crearemos la base de datos y tabla para la que se establecerá el trigger:
 ```sql
 /* Crear la base de datos */
