@@ -49,6 +49,8 @@ SELECT * FROM members;
 ```
 
 foto 1
+![MensajeEntradaInt](https://github.com/DanielBraun11/ApuntesSQL/blob/main/fotosSQL/AfterInsert1.png) 
+
 
 ```sql
 /* Obtener los registros de la tabla reminders */
