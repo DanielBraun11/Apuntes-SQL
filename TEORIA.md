@@ -1,11 +1,15 @@
 # Índice de Teoría
 
 
-Ejemplos de TRIGGERS
+## Ejemplos de TRIGGERS
+
+### INSERT
 
 [BEFORE INSERT](EjemplosTriggers/BeforeInsert.md)
 
 [AFTER INSERT](EjemplosTriggers/AfterInsert.md)
+
+### UPDATE
 
 [BEFORE UPDATE](EjemplosTriggers/BeforeUpdate.md)
 
