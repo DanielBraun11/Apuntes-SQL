@@ -10,7 +10,7 @@ USE demoTrigger;
 ```
 ```sql
 /* Crear tabla */
-CREATE TABLE IF NOT EXISTS people (age INT, name varchar(150));
+CREATE TABLE IF NOT EXISTS people (age INT, name VARCHAR(150));
 ```
 
 ## Creación de un trigger BEFORE INSERT
