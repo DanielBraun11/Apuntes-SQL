@@ -14,3 +14,9 @@
 [BEFORE UPDATE](EjemplosTriggers/BeforeUpdate.md)
 
 [AFTER INSERT](EjemplosTriggers/AfterUpdate.md)
+
+### DELETE
+
+[BEFORE DELETE](EjemplosTriggers/BeforeDelete.md)
+
+[AFTER DELETE](EjemplosTriggers/AfterDelete.md)
