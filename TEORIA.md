@@ -1,5 +1,7 @@
 # Índice de Teoría
 
+[TEORÍA](teoriaSQL/SQL.md)
+
 
 ## Ejemplos de TRIGGERS
 
